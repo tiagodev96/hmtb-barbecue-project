@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMTB? - Barbecue</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./assets/HMTB - BARBECUE LOGO.svg"
+        alt="Logo How Many To Buy - Barbecue"
+      />
+    </header>
+
+    <main class="container">
+      <div class="descriptionText">
+        <h2>How many to buy? - Barbecue Version</h2>
+        <p>Don't miss out on food or drink at your barbecue</p>
+        <p>Meal amount in Kilo | Beer, soda and water amount in Liters</p>
+      </div>
+      <form action="" class="form" onsubmit="Form.submit(event)">
+        <label for="adults">How Many Adults?</label>
+        <input
+          type="number"
+          name="adults"
+          id="adults"
+          placeholder="Number of adults"
+          required
+        />
+        <label for="adults">How Many Children?</label>
+        <input
+          type="number"
+          name="children"
+          id="children"
+          placeholder="Number of children"
+          required
+        />
+        <label for="adults">What's the duration? (in hours)</label>
+        <input
+          type="number"
+          name="duration"
+          id="duration"
+          placeholder="Event duration"
+          required
+        />
+
+        <button>Calculate</button>
+      </form>
+
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <p>Made with <span>❤</span> by TDev</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+/* _________________ Generals _________________ */
+:root {
+  --dark-blue: #363f5f;
+  --light-green: #5fe7d1;
+  --red: #e92929;
+  --gray: #4c5652;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f2f5;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* _________________ Main _________________ */
+.container {
+  background: var(--light-green);
+  border-radius: 0.8rem;
+  margin: auto;
+  padding: 1.25rem;
+  width: min(90vw, 800px);
+}
+
+.descriptionText {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 1.25rem;
+}
+
+.descriptionText p {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: auto;
+  width: min(80%, 300px);
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.2rem;
+  border: 3px solid var(--dark-blue);
+  padding: 5px;
+}
+
+button {
+  align-self: center;
+  background-color: var(--dark-blue);
+  border-radius: 0.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  width: 100px;
+}
+
+#result {
+  margin-top: 1.125rem;
+}
+
+.resultMessage {
+  color: var(--gray);
+  font-size: 1.5rem;
+}
+
+/* _________________ Footer _________________ */
+footer {
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  color: var(--dark-blue);
+  opacity: 0.6;
+}
+
+footer p:hover {
+  opacity: 1;
+}
+
+footer span {
+  color: var(--red);
+}
